@@ -1,0 +1,56 @@
+<idea-plugin>
+    <id>easy.plugin.translation</id>
+    <name>Easy-Translation</name>
+    <version>1.3.1</version>
+    <vendor email="limengyu1990@163.com" url="https://github.com/limengyu1990">limengyu</vendor>
+
+    <description><![CDATA[
+        <h3>Instructions for use</h3>
+        <p>File -> Settings -> Other Settings -> Translation Configuration, Set Translation Source</p>
+        <p>Chinese to English: "Right mouse button -> Chinese 2 English", or use the shortcut key (Alt A)</p>
+        <p>English to Chinese: Mouse select the English to be translated, then "Right mouse -> translation", or use the shortcut key (Alt T)</p>
+    ]]></description>
+
+    <change-notes>
+        <![CDATA[
+            <p>optimize translation effect and improve readability</p>
+      ]]>
+    </change-notes>
+
+    <!--131 please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable instance="easy.config.TranslationConfig"/>
+        <applicationService serviceInterface="easy.config.TranslationSetting"
+                            serviceImplementation="easy.config.TranslationSetting"/>
+    </extensions>
+
+    <application-components>
+        <component>
+            <implementation-class>easy.idea.MyPluginRegistration</implementation-class>
+        </component>
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="toEnglish" class="easy.idea.ToEnglishAction" text="中文2英文" description="cn->en">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt A"/>
+        </action>
+        <action id="easyTranslate" class="easy.idea.ToChineseAction" text="翻译" description="en->cn">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
+        </action>
+    </actions>
+</idea-plugin>

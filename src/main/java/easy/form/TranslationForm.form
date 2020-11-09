@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="easy.form.TranslationForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="FormLayout">
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <constraints>
+      <xy x="20" y="40" width="641" height="381"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="b2b2f" class="javax.swing.JRadioButton" binding="baidu">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <actionCommand value=""/>
+          <enabled value="false"/>
+          <label value="百度"/>
+          <name value="百度"/>
+          <text value="百度"/>
+          <toolTipText value="百度"/>
+        </properties>
+      </component>
+      <component id="fba01" class="javax.swing.JRadioButton" binding="jinshan">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <name value="金山"/>
+          <text value="金山"/>
+          <toolTipText value="金山文章翻译"/>
+        </properties>
+      </component>
+      <component id="20e77" class="javax.swing.JRadioButton" binding="tencent">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <name value="腾讯"/>
+          <text value="腾讯"/>
+        </properties>
+      </component>
+      <component id="1fcbd" class="javax.swing.JRadioButton" binding="google_1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <name value="谷歌线路1"/>
+          <selected value="true"/>
+          <text value="谷歌线路1"/>
+        </properties>
+      </component>
+      <component id="e2c7a" class="javax.swing.JLabel" binding="desc">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <name value="desc"/>
+          <text value="请选择翻译源"/>
+        </properties>
+      </component>
+      <component id="80ab0" class="javax.swing.JRadioButton" binding="omi">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <name value="欧米"/>
+          <text value="欧米"/>
+        </properties>
+      </component>
+      <component id="3990c" class="javax.swing.JRadioButton" binding="google_2">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <name value="谷歌线路2"/>
+          <selected value="false"/>
+          <text value="谷歌线路2"/>
+        </properties>
+      </component>
+      <component id="e514d" class="javax.swing.JTextField" binding="en2Zh">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <foreground color="-8093509"/>
+          <name value="en2Zh"/>
+          <text value=""/>
+          <toolTipText value="请求超时时间"/>
+        </properties>
+      </component>
+      <component id="a3905" class="javax.swing.JLabel" binding="en2ZhLabel">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <name value="en2ZhLabel"/>
+          <text value="英-中 请求超时时间(ms)"/>
+        </properties>
+      </component>
+      <component id="896cd" class="javax.swing.JLabel" binding="zh2EnLabel">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <name value="zh2EnLabel"/>
+          <text value="中-英 请求超时时间(ms)"/>
+        </properties>
+      </component>
+      <component id="bc83a" class="javax.swing.JTextField" binding="zh2En">
+        <constraints>
+          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <enabled value="true"/>
+          <foreground color="-8093509"/>
+          <name value="zh2En"/>
+          <text value=""/>
+          <toolTipText value="请求超时配置"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="engineGroup">
+      <member id="b2b2f"/>
+      <member id="fba01"/>
+      <member id="7e522"/>
+      <member id="20e77"/>
+      <member id="80ab0"/>
+      <member id="1fcbd"/>
+      <member id="3990c"/>
+    </group>
+  </buttonGroups>
+</form>
