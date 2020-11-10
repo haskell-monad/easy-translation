@@ -4,7 +4,7 @@ package easy.common;
  * @author limengyu
  * @create 2017/10/30
  */
-public class Constant {
+    public class Constant {
 
     public static final String DEFAULT_ENGINE = Constant.TRANSLATE_TYPE.GOOGLE_1.getName();
     public static final String GOOGLE_API = "http://translate.hotcn.top/translate/api";
